@@ -1,4 +1,55 @@
-<xml xmlns="http://www.w3.org/1999/xhtml">
-  <variables></variables>
-  <block type="pxt-on-start" x="0" y="0"></block>
-</xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="9Go4r{s,WqD)Ko/mile5">Player</variable><variable type="KIND_SpriteKind" id="w[pr5?wD303Fyya2a=S(">Projectile</variable><variable type="KIND_SpriteKind" id="L;;dlVI40qhxNCbTFb0P">Food</variable><variable type="KIND_SpriteKind" id="=l%yP3b30o7]zCG(ft;1">Enemy</variable><variable id="~a/2Iq5Jvg*7~o*10^zQ">mySprite</variable><variable id="MWxH@?_ANB[kng]J9Ql,">Luigi</variable><variable id="X[j_BoBT}$IDd$)^f2R!">Mario</variable></variables><block type="pxt-on-start" id="-wc4D:9iuZm(h~#_!$Pt" x="20" y="20"><statement name="HANDLER"><block type="tilemap_editor" id="gqoF#N,:Ra4HBc}S{!|u"><field name="tilemap">tiles.createTilemap(hex`1000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000`, img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`, [myTiles.transparency16], TileScale.Sixteen)</field><next><block type="variables_set" id="U`z?4|htM|y)nSorQ(~O"><field name="VAR" id="X[j_BoBT}$IDd$)^f2R!">Mario</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="z1490ln6qEx*`|LP_As,"><value name="img"><shadow type="screen_image_picker" id="K3-|5#/!O]Rb$BG-YP=4"><field name="img">img`
+. . . . . 2 2 2 2 1 . . . . . . 
+. . . . 2 2 2 2 2 2 2 2 2 . . . 
+. . . . e e e 4 4 8 4 . . . . . 
+. . . e 4 e 4 4 4 8 4 4 4 . . . 
+. . . e 4 e e 4 4 4 e 4 4 4 . . 
+. . . e e 4 4 4 4 e e e e . . . 
+. . . . . 4 4 4 4 4 4 4 . . . . 
+. . . . 2 2 8 2 2 2 . . . . . . 
+. . . 2 2 2 8 2 2 8 2 2 2 . . . 
+. . 2 2 2 2 8 8 8 8 2 2 2 2 . . 
+. . 1 1 2 8 5 8 8 5 8 2 1 1 . . 
+. . 1 1 1 8 8 8 8 8 8 1 1 1 . . 
+. . 1 1 8 8 8 8 8 8 8 8 1 1 . . 
+. . . . 8 8 8 . . 8 8 8 . . . . 
+. . . e e e . . . . e e e . . . 
+. . e e e e . . . . e e e e . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="7G^t$lsyLMFW54PPn:OF"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="CK8~rG-RrnQnp?IubmIh"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="/_gK2na~r`v7]qwDJ9rV"><field name="VAR" id="X[j_BoBT}$IDd$)^f2R!">Mario</field></block></value><value name="vx"><shadow type="math_number" id="g})gJf[M7y/}fps^$~FN"><field name="NUM">100</field></shadow></value><value name="vy"><shadow type="math_number" id="Z%=hHw*NBv%JQ)Cs;J-7"><field name="NUM">0</field></shadow></value><next><block type="spritesetsetflag" id="hS*cp=.iXA!C}RpmKptQ"><field name="flag">SpriteFlag.StayInScreen</field><value name="sprite"><block type="variables_get" id="X9UK?wI3|NAHRy}[.I6z"><field name="VAR" id="X[j_BoBT}$IDd$)^f2R!">Mario</field></block></value><value name="on"><shadow type="toggleOnOff" id="YZ2,AOBV:nt4dIo-1c%n"><field name="on">true</field></shadow></value></block></next></block></next></block></next></block></statement></block><block type="ctrlonevent" id="Ug^Oq(|XZPeXhBU]3+a~" x="850" y="70"><field name="controller">controller.player2</field><field name="event">ControllerEvent.Connected</field><statement name="HANDLER"><block type="variables_set" id="WBgO++afH|7gv$5B(?2X"><field name="VAR" id="MWxH@?_ANB[kng]J9Ql,">Luigi</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="8EKoQp${O6l]Qraxl`c8"><value name="img"><shadow type="screen_image_picker" id="[To|As.T|s=-dr8f|SGV"><field name="img">img`
+......77771.....
+.....777777777..
+.....eeee484....
+.....e4e4484....
+.....e4e44444...
+.....ee4444e44..
+.....44444eee...
+......44444.....
+.....78777......
+....77877877....
+...7778888777...
+..777888888777..
+..117858858711..
+..111888888111..
+..118888888811..
+....88888888....
+....888..888....
+...eee....eee...
+..eeee....eeee..
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="zDoPuj0g@waY|]QO_*WP"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="ctrlgame_control_sprite" id="Q{D?n+1LwX-%pU,[0ip,"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><field name="controller">controller.player2</field><value name="sprite"><block type="variables_get" id="},y3q0yRAsSJgn!c^q9T"><field name="VAR" id="MWxH@?_ANB[kng]J9Ql,">Luigi</field></block></value><value name="vx"><shadow type="math_number" id="LPqdi!O@!B{C1[kzp2R8"><field name="NUM">100</field></shadow></value><value name="vy"><shadow type="math_number" id="[u+a~sP}^tn489O@-zWF"><field name="NUM">0</field></shadow></value><next><block type="spritesetsetflag" id="r#G#E}LO5?JJs|d3U5^1"><field name="flag">SpriteFlag.StayInScreen</field><value name="sprite"><block type="variables_get" id="3{$gjHXF!aBib[3jq.r0"><field name="VAR" id="MWxH@?_ANB[kng]J9Ql,">Luigi</field></block></value><value name="on"><shadow type="toggleOnOff" id="HLl%f[0AU)W0TwSW.8#8"><field name="on">true</field></shadow></value></block></next></block></next></block></statement></block></xml>
